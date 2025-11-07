@@ -39,4 +39,56 @@ public class CommentTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void TestAuthorRating()
+    {
+    }
+
+    @Test
+    public void author()
+    {
+        Comment comment1 = new Comment("bob", "no bob", 3);
+    }
+
+    @Test//Q18
+    public void upvote()
+    {
+        Comment comment1 = new Comment("we", "lol", 2);
+        comment1.upvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.downvote();
+        comment1.downvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.upvote();
+        comment1.downvote();
+        comment1.upvote();
+        comment1.downvote();
+    }
+
+    @Test//Q18
+    public void Author()
+    {
+        Comment comment1 = new Comment("John", "story of joh", 1);
+        assertEquals("John", comment1.getAuthor());
+        assertEquals(1, comment1.getRating());
+    }
+
+    @Test//Q18
+    public void rating()
+    {
+        Comment comment1 = new Comment("Vomi", "hi", 4);
+        assertEquals(4, comment1.getRating());
+    }
 }
+
+
+
+
+
