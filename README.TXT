@@ -16,3 +16,8 @@ a test class that demonstrates some of the testing functionality. Testing is fur
 discussed in the book.
 
 NOTE: There are several serious errors to be found in these classes.
+
+Question 14.
+public void tearDown()
+public void setUp()
+public CommentTest()
