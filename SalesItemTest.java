@@ -69,4 +69,16 @@ public class SalesItemTest
         assertEquals("test name", salesIte1.getName());
         assertEquals(1000, salesIte1.getPrice());
     }
+
+    @Test
+    public void vfgb()
+    {
+        SalesItem salesIte1 = new SalesItem("l", 7);
+        assertEquals(5, salesIte1.addComment("k", "k", 6));
+        SalesItem salesIte2 = new SalesItem("fghj", 9);
+        SalesItem salesIte3 = new SalesItem(";", 9);
+        SalesItem salesIte4 = new SalesItem("435", 9);
+        assertEquals(false, salesIte4.addComment("JKL", "UKU", 0));
+    }
 }
+
