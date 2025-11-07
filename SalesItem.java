@@ -51,7 +51,9 @@ public class SalesItem
     {
         return comments.size();
     }
-    
+    public ArrayList<Comment> getComments(){
+        return comments;
+    }
     /**
      * Add a comment to the comment list of this sales item. Return true if
      * successful; false if the comment was rejected.
