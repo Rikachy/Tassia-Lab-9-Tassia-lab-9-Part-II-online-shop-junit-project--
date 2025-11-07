@@ -23,6 +23,7 @@ public void setUp()
 public CommentTest()
 
 Question 17. 
+You see which test went wrong, with the help of an X.
 You are given an option to view where in the source code you went wrong.
-
+You can view more information about it.
 
