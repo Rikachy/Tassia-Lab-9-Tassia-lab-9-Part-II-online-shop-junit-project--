@@ -139,6 +139,9 @@ public class SalesItem
     {
         int i = 0;
         Comment best = comments.get(i);
+        if(comments.size()==0){
+            return null;
+        }
         while (i<comments.size()){
             Comment current = comments.get(i);
 
